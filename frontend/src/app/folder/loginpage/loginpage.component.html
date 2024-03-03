@@ -1,0 +1,42 @@
+<!-- <nav class="navbar">
+  <div class="container-login100">
+    <img src="\assets\image\11.png" alt="Image 1" class="navbar-image">
+    <span class="navbar-text">Sikkim Tourism Development Corporation</span>
+    <span class="navbar-text1">Sikkim House Reservation System</span>
+  </div>
+</nav> -->
+<div class="container-login100">
+  <img
+    src="\assets\image\11.png"
+    alt=""
+    style="
+      filter: inherit(0);
+      border-radius: 20px;
+      width: 270px;
+      height: auto;
+      mix-blend-mode: multiply;"/>
+      <span class="navbar-text" style=" color:rgb(61, 6, 67);padding:6px 0px">Sikkim Tourism Development Corporation</span>
+      <span class="navbar-text1" style="color: rgb(69, 8, 75);">Sikkim House Reservation System</span>
+  <br />
+  <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+    <form [formGroup]="myform" (ngSubmit)="onSubmit()" class="login100-form validate-form">
+      <span class="login100-form-title p-b-37"> Sign In </span>
+      <div class="wrap-input100 validate-input m-b-20" data-validate="Enter username or email">
+        <input formControlName="username" class="input100" type="text" name="username" placeholder="username or email"/>
+        <span class="focus-input100"></span>
+      </div>
+      <div class="wrap-input100 validate-input m-b-25" data-validate="Enter password">
+        <input formControlName="password" class="input100" type="password" name="pass" placeholder="password"/>
+        <span class="focus-input100"></span>
+      </div>
+      <div class="container-login100-form-btn">
+        <button class="login100-form-btn" type="submit">Sign In</button>
+        <!-- Sameer Code -->
+        <!-- <button class="login100-form-btn">
+          <a href="Topnavbar" style="color: white; text-decoration: none">Sign In</a>
+        </button> -->
+      </div>
+      <br />
+    </form>
+  </div>
+</div>

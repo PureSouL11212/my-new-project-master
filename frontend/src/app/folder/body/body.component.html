@@ -1,0 +1,319 @@
+<div class="container">
+  <div class="row">
+    <div class="booking" style="text-align: center; padding: 30px 80px">
+      <div
+        class="bk"
+        style="
+          border: 2px solid black;
+          padding: 30px 80px;
+          border-radius: 50px;
+          display: inline-block;
+        "
+      >
+        <p
+          class="booking-period-title"
+          style="
+            text-decoration: underline;
+            font-size: 25px;
+            font-style: bcharter bd bt;
+          "
+        >
+          BOOKING PERIOD
+        </p>
+        <p>From Date :</p>
+        <input type="date" id="bookingDate" name="bookingDate" />
+        <hr />
+        <p>Till Date :</p>
+        <input type="date" id="bookingDate" name="bookingDate" required /><br />
+        <br />
+        <button (click)="proceed()">Check Availability</button>
+      </div>
+    </div>
+    <div class="booking" style="text-align: center; padding: 0px 0px">
+      <div
+        class="bk"
+        style="
+          border: 2px solid black;
+          padding: 30px 80px;
+          border-radius: 50px;
+          display: inline-block;
+        "
+      >
+        <!-- hotel image section -->
+
+        <!-- <div class="booking-box">
+          <p>Date: {{ currentDate }}</p>
+          <div class="image-section">
+            <img src="path_to_your_image.jpg" alt="Image Section" />
+          </div>
+          <p>Number of Rooms Available:</p>
+          <ul>
+            <li ngFor="let room of availableRooms">{{ room }}</li>
+          </ul>
+          <button (click)="proceed()">Proceed</button>
+        </div> -->
+
+        <!-- <div class="booking-box">
+          <div *ngFor="let room of availableRooms" class="room-info">
+            <img [src]="room.image" alt="Room Image" />
+            <p>Date: {{ room.date }}</p>
+            <p>Day: {{ room.day }}</p>
+          </div>
+          <button (click)="proceed()">Proceed</button>
+        </div> -->
+
+        <!-- <div class="booking-box">
+          <div class="image-container">
+            <div *ngFor="let room of availableRooms" class="room-info">
+              <img [src]="room.image" alt="Room Image" />
+              <p>Date: {{ room.date }}</p>
+              <p>Day: {{ room.day }}</p>
+            </div>
+          </div>
+          <button (click)="proceed()">Proceed</button>
+        </div> -->
+
+        <div class="booking-box">
+          <div class="image-container">
+            <div *ngFor="let room of availableRooms" class="room-info">
+              <img [src]="room.image" alt="Room Image" />
+              <p>Date: {{ room.date }}</p>
+              <p>Day: {{ room.day }}</p>
+              <p>RoomAvailable: {{ room.RoomAvailable }}</p>
+            </div>
+          </div>
+          <button (click)="proceed()">Proceed</button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <!--  -->
+
+    <div class="container1">
+      <div class="left-box">
+        <h2>Visitors Details</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Enter your address"
+            />
+          </div>
+          <div class="form-group">
+            <label for="purpose">Purpose of Visit</label>
+            <select id="purpose" name="purpose">
+              <option value="">Select Purpose</option>
+              <option value="business">Business</option>
+              <option value="leisure">Leisure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="office">Office/Company</label>
+            <input
+              type="text"
+              id="office"
+              name="office"
+              placeholder="Enter office/company"
+            />
+          </div>
+          <div class="form-group">
+            <label for="sikkimese">Sikkimese</label>
+            <select id="sikkimese" name="sikkimese">
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="idCardType">ID Card Type</label>
+            <select id="idCardType" name="idCardType">
+              <option value="">Select ID Card Type</option>
+              <option value="aadhar">Aadhaar Card</option>
+              <option value="passport">Passport</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="idCardNo">ID Card No.</label>
+            <input
+              type="number"
+              id="idCardNo"
+              name="idCardNo"
+              placeholder="Enter ID card number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="contactNo">Contact No.</label>
+            <input
+              type="number"
+              id="contactNo"
+              name="contactNo"
+              placeholder="Enter contact number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="gstNo">GST No.</label>
+            <input
+              type="number"
+              id="gstNo"
+              name="gstNo"
+              placeholder="Enter GST number"
+            />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <!-- <div class="right-box">
+        <h2>Box 2</h2>
+        <form></form>
+      </div> -->
+
+      <div class="right-box">
+        <h2>Room Details</h2>
+        <form>
+          <div class="form-group">
+            <label for="houseType">House Type</label>
+            <select id="houseType" name="houseType">
+              <option value="">Select House Type</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="roomNo">Room No.</label>
+            <select id="roomNo" name="roomNo">
+              <option value="">Select Room No.</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="rate">Rate</label>
+            <input
+              type="number"
+              id="rate"
+              name="rate"
+              placeholder="Enter rate"
+            />
+          </div>
+          <div class="form-group">
+            <label for="discount">Discount</label>
+            <input
+              type="number"
+              id="discount"
+              name="discount"
+              placeholder="Enter discount"
+            />
+          </div>
+          <div class="form-group">
+            <label for="cgst">CGST</label>
+            <input
+              type="number"
+              id="cgst"
+              name="cgst"
+              placeholder="Enter CGST"
+            />
+          </div>
+          <div class="form-group">
+            <label for="total">Total</label>
+            <input
+              type="number"
+              id="total"
+              name="total"
+              placeholder="Enter total"
+            />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="other-services-box">
+      <h2>Other Services</h2>
+      <form>
+        <div class="form-group">
+          <label for="extraMattress">Extra Mattress Required?</label>
+          <select id="extraMattress" name="extraMattress">
+            <option value="">Select</option>
+
+            <option value="yes">Yes</option>
+
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="numDaysExtraMattress"
+            >Number of Days Extra Mattress Used</label
+          >
+          <select id="numDaysExtraMattress" name="numDaysExtraMattress">
+            <option value="">Select Number of Days</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="dailyChargeExtraMattress"
+            >Daily Charge (Extra Mattress)</label
+          >
+          <input
+            type="number"
+            id="dailyChargeExtraMattress"
+            name="dailyChargeExtraMattress"
+            placeholder="Enter daily charge"
+          />
+        </div>
+        <div class="form-group">
+          <label for="totalExtraMattress">Total (Extra Mattress)</label>
+          <input
+            type="number"
+            id="totalExtraMattress"
+            name="totalExtraMattress"
+            placeholder="Enter total"
+          />
+        </div>
+        <div class="form-group">
+          <label for="partyService">Party Service Required?</label>
+          <select id="partyService" name="partyService">
+            <option value="">Select</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="dailyChargePartyService"
+            >Daily Charge (Party Service)</label
+          >
+
+          <input
+            type="number"
+            id="dailyChargePartyService"
+            name="dailyChargePartyService"
+            placeholder="Enter daily charge"
+          />
+        </div>
+        <div class="form-group">
+          <label for="totalPartyService">Total (Party Service)</label>
+          <input
+            type="number"
+            id="totalPartyService"
+            name="totalPartyService"
+            placeholder="Enter total"
+          />
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <br />
+    <br />
+  </div>
+</div>

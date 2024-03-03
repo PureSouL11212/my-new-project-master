@@ -1,0 +1,12 @@
+<p>Home a works </p>
+<div >
+    <h2>Billing</h2>
+    <ul>
+      <li *ngFor="let product of products">
+        <h3>{{ product.name }}</h3>
+         <p>Price: {{ product.price }}</p>
+         <p>Description: {{ product.description }}</p>
+        <p>Created At: {{ product.created_at }}</p> 
+      </li>
+    </ul>
+  </div>

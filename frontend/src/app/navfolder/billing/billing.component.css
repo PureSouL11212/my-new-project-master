@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .invoice {
+    width: 80%;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .invoice-header h1 {
+    text-align: center;
+  }
+  
+  .invoice-details {
+    margin-bottom: 20px;
+  }
+  
+  .invoice-items table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .invoice-items th, .invoice-items td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  .invoice-total {
+    text-align: right;
+    margin-top: 20px;
+  }
+  

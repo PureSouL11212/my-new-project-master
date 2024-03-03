@@ -1,0 +1,27 @@
+.footer {
+  background:rgb(2, 0, 36);
+  background: linear-gradient(90deg,rgba(2,0,36,1)0%,rgba(11,11,55,1)35%,rgba(0,212,255,1)100%);
+  
+    padding: 20px;
+    text-align: center;
+    /* position:fixed; */
+    bottom: 0;
+    width: 100%;
+  }
+  
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .design-info {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .copyright {
+    font-size: 0.8em;
+    color: #ffffff; 
+  }

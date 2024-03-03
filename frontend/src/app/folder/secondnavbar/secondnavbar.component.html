@@ -1,0 +1,89 @@
+<!-- app.component.html -->
+
+<div class="container">
+  <nav class="navbar">
+    <button class="toggle-button" (click)="toggleMenu()">☰</button>
+    <ul [class.responsive]="isResponsive" class="nav-links">
+      <li class="nav-link services">
+        <a href="#">Home </a>
+        <ul class="drop-down">
+          <li routerLink="home1">Home 1</li>
+          <li>Home 2</li>
+          <li>Home 3</li>
+        </ul>
+      </li>
+      <li class="nav-link services">
+        <a href="#">Booking </a>
+        <ul class="drop-down">
+          <li>Booking 1</li>
+          <li>Booking 2</li>
+          <li>Booking 3</li>
+        </ul>
+      </li>
+      <!-- Add other menu items as needed -->
+      <li class="nav-link services">
+        <a href="#">Bill </a>
+        <ul class="drop-down">
+          <li>Bill 1</li>
+          <li>Bill 2</li>
+          <li>Bill 3</li>
+        </ul>
+      </li>
+      <li class="nav-link services">
+        <a href="#">Cancel </a>
+        <ul class="drop-down">
+          <li>Cancel 1</li>
+          <li>Cancel 2</li>
+          <li>Cancel 3</li>
+        </ul>
+      </li>
+      <li class="nav-link services">
+        <a href="#">Modify </a>
+        <ul class="drop-down">
+          <li>Modify 1</li>
+          <li>Modify 2</li>
+          <li>Modify 3</li>
+        </ul>
+      </li>
+      <li class="nav-link services">
+        <a href="#">Report </a>
+        <ul class="drop-down">
+          <li>Report 1</li>
+          <li>Report 2</li>
+          <li>Report 3</li>
+        </ul>
+      </li>
+      <li class="nav-link services">
+        <a href="#">Occupancy </a>
+        <ul class="drop-down">
+          <li>Occupancy 1</li>
+          <li>Occupancy 2</li>
+          <li>Occupancy 3</li>
+        </ul>
+      </li>
+      <li class="nav-link services">
+        <a href="#">Room Vacancy </a>
+        <ul class="drop-down">
+          <li>Room Vacancy 1</li>
+          <li>Room Vacancy 2</li>
+          <li>Room Vacancy 3</li>
+        </ul>
+      </li>
+      <li class="nav-link services">
+        <a href="#">Room Rate </a>
+        <ul class="drop-down">
+          <li>Room Rate 1</li>
+          <li>Room Rate 2</li>
+          <li>Room Rate 3</li>
+        </ul>
+      </li>
+      <li class="nav-link services">
+        <a href="#">Backup DB </a>
+        <ul class="drop-down">
+          <li>Backup DB 1</li>
+          <li>Backup DB 2</li>
+          <li>Backup DB 3</li>
+        </ul>
+    </ul>
+  </nav>
+</div>
