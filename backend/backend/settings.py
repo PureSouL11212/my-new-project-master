@@ -70,7 +70,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'bills4',
         'USER':'postgres',
-        'PASSWORD':'samKHAN432108$12',
+        'PASSWORD':'yogesh',
     }
 }
 # Password validation
