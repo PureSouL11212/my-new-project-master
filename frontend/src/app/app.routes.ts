@@ -8,6 +8,7 @@ import { BookingComponent } from './navfolder/booking/booking.component';
 import { ProfileComponent } from './folder/profile/profile.component';
 import { LoginpageComponent } from './folder/loginpage/loginpage.component';
 import { BillingComponent } from './navfolder/billing/billing.component';
+import { Cancel1Component } from './navfolder/cancel1/cancel1.component';
 export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
     // { path: 'login', loadComponent: () => import('./folder/loginpage/loginpage.component').then(c => c.LoginpageComponent) },
@@ -21,4 +22,6 @@ export const routes: Routes = [
     { path: 'homea', component: HomeAComponent },
     { path: 'booking', component: BookingComponent },
     { path: 'billing', component:BillingComponent },
+    { path: 'cancel', component:Cancel1Component },
+
 ];

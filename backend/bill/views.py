@@ -1,6 +1,14 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.apps import apps
+
+from rest_framework import viewsets
+from .models import User
+from .serializers import UserSerializer
+
+
+
+
 # Create your views here.
 def get_data(request, model_name):
     try:
@@ -14,3 +22,6 @@ def get_data(request, model_name):
         return JsonResponse({'error': str(e)})
 
 
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer

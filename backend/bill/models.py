@@ -17,3 +17,10 @@ class Product(models.Model):
         return self.name
     
     
+class User(models.Model):
+    name = models.CharField(max_length=100)
+    password = models.CharField(max_length=100)
+    email = models.EmailField(unique=True)
+
+    def __str__(self):
+        return self.name

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { MyComponentComponent } from "./folder/my-component/my-component.component";
 import { TopnavbarComponent } from './folder/topnavbar/topnavbar.component';
 import { SecondnavbarComponent } from './folder/secondnavbar/secondnavbar.component';
 import { BodyComponent } from './folder/body/body.component';
@@ -15,12 +14,13 @@ import { MainhomepageComponent } from './navfolder/mainhomepage/mainhomepage.com
 import { HttpClientModule } from '@angular/common/http';
 import { PublicService } from './services/public.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Cancel1Component } from './navfolder/cancel1/cancel1.component';
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [FormsModule, ReactiveFormsModule,CommonModule,RouterOutlet,BookingComponent,MainhomepageComponent,BurgerComponent,HomeAComponent,TestbodyComponent,FooterComponent, MyComponentComponent ,BodyComponent,LoginpageComponent,TopnavbarComponent,HttpClientModule,SecondnavbarComponent ]
+    imports: [FormsModule, ReactiveFormsModule,Cancel1Component,CommonModule,RouterOutlet,BookingComponent,MainhomepageComponent,BurgerComponent,HomeAComponent,TestbodyComponent,FooterComponent ,BodyComponent,LoginpageComponent,TopnavbarComponent,HttpClientModule,SecondnavbarComponent ]
 })
 export class AppComponent {
   title = 'my-new-project';
