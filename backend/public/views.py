@@ -5,6 +5,6 @@ from rest_framework.views import APIView
 class IndexView(APIView):
     def get(self, request, format=None):
         content = {
-            'wmsg':'Welcome to Legend_Killer_1417 Code'
+            'wmsg':'Welcome to Code'
         }
         return Response(content)

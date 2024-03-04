@@ -2,9 +2,7 @@
   <select (change)="onBillSelect($event)">
     <option *ngFor="let bill of bills" [value]="bill.id">{{ bill.Bill_Number }}</option>
   </select>
-  
 </div>
-
 <div *ngIf="selectedBill">
   <h2>Bill Details</h2>
   <p>Bill Number: {{ selectedBill.Bill_Number }}</p>
